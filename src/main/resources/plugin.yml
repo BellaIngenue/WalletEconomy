@@ -2,11 +2,21 @@ name: WalletEconomy
 version: '${project.version}'
 main: bs.bellaingenue.walleteconomy.WalletEconomy
 api-version: 1.18
-authors: [ BellaIngenue ]
+depend:
+  - Vault
+  - PlayerPoints
+  - Essentials
+softdepend:
+  - CMI
+  - CMILib
+authors: [BellaIngenue]
 description: Wallet Economy
 website: http://blueskiesmc.xyz/home
 commands:
   wallet:
     description: An easy printer for both Player Balance and Player Points
     usage: /<command>
+    aliases:
+      - wallets
+
 
